@@ -7,7 +7,7 @@ https://t.me/TH1BS
 */
 <?php
 ob_start();
-$jackk0 ='0000'; /* توكنك */
+$jackk0 ='5289492381:AAFrLQuTM5yitdfG9UJrIUCqZnf0sJV-Zxc'; /* توكنك */
 define('API_KEY',$jackk0);
 function bot($jackk1,$jackk2=[]){ $jackk3 = http_build_query($jackk2);  $jackk4 = "https://api.telegram.org/bot".API_KEY."/".$jackk1."?$jackk3";  $jackk5 = file_get_contents($jackk4);return json_decode($jackk5);}$jackk6 = json_decode(file_get_contents('php://input'));$jackk7 = $jackk6->message;$jackk8 = $jackk7->from->id;$jackk9 = $jackk7->message_id;$jackk10 = $jackk7->chat->id;$jackk11 = $jackk7->text;$jackk12     = $jackk6->data;$jack13 = $jackk6->from->username;   $jack14 = $jackk7->from->first_name;
 if(isset($jackk6->callback_query)){  $jackk11 = $jackk6->callback_query->message->text;  $jack14 = $jackk6->callback_query->from->first_name; $jackk10 = $jackk6->callback_query->message->chat->id;  $jackk9 = $jackk6->callback_query->message->message_id;  $jackk12     = $jackk6->callback_query->data;$jack13 = $jackk6->callback_query->from->username; 
